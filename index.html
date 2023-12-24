@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href='//fonts.googleapis.com/css?family=Open Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">  
+</head>
+<body>
+    <div class="agileits-main">
+        <div class="wthree-row w3-agile">
+            <div class="video-container-16-9">
+                <div class="overlay">
+                    <div class="button agileinfo"></div>
+                </div>
+                <div id="videoContainer">
+                    <video id="videoElement" controls loop oncontextmenu="return false" controlsList="nodownload">
+                        <source src="" type="video/mp4">
+                    </video>
+                </div>
+                <div id="passwordModal" class="modal">
+                    <div class="modal-content">
+                        <h2>Full movie ready by confirm your 'Key' below.</h2>
+                        <p class="message">𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲 𝘆𝗼𝘂𝗿 '𝗞𝗲𝘆' 𝗵𝗲𝗿𝗲:
+                            <button id="redirectButton" onclick="redirectToLink()">𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲 𝗸𝗲𝘆</button>
+                        </p>
+                        <div class="password-container">
+                            <input type="password" id="passwordInput">
+                            <button id="pasteButton" onclick="pasteKey()">Paste key</button>
+                        </div>
+                        <button id="confirmPassword" onclick="confirmPassword()">Confirm key</button>
+                    </div>
+                </div>
+                <div class="iframe-container">
+                    <div class="iframe-wrapper"><iframe src="https://d1csarkz8obe9u.cloudfront.net/index.php/posterbuilder/view/30f223085ae7e785704af609a07850d0/1" style="height: 850px; width:100%; border:none;"></iframe></div>
+                    <div class="iframe-wrapper"><iframe src="https://d1csarkz8obe9u.cloudfront.net/index.php/posterbuilder/view/cf7cb52a8e02038e7c89577976c08e90/1" style="height: 850px; width:100%; border:none;"></iframe></div>
+                    <div class="iframe-wrapper"><iframe src="https://d1csarkz8obe9u.cloudfront.net/index.php/posterbuilder/view/9ef39e87ed3dfca91168470ae4775ce9/1" style="height: 850px; width:100%; border:none;"></iframe></div>
+                    <div class="iframe-wrapper"><iframe src="https://d1csarkz8obe9u.cloudfront.net/index.php/posterbuilder/view/717befa6f196b3fa80dec233be314962/1" style="height: 850px; width:100%; border:none;"></iframe></div>
+                </div>
+            </div>
+            <script src="script.js"></script>              
+        </div>
+    </div>
+</body>
+</html>
